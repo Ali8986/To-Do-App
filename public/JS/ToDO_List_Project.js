@@ -50,11 +50,11 @@ function renderTasks() {
                 <span class="ml-2 ${task.done ? 'text-decoration-line-through' : ''}">${task.content}</span>
             </div>
             <div>
-                <button class="btn btn-info btn-sm" onclick="editTask(${task.id})"><i class="fas fa-edit"></i></button>
-                <button class="btn btn-warning btn-sm" ${upButtonDisabled} onclick="moveUp(${task.id})"><i class="fas fa-arrow-up"></i></button>
-                <button class="btn btn-warning btn-sm" ${downButtonDisabled} onclick="moveDown(${task.id})"><i class="fas fa-arrow-down"></i></button>
-                <button class="btn btn-success btn-sm" onclick="duplicateTask(${task.id})"><i class="fas fa-clone"></i></button>
-                <button class="btn btn-danger btn-sm" onclick="confirmDelete(${task.id})"><i class="fas fa-trash-alt"></i></button>
+                <button class="btn btn-primary btn-sm" onclick="editTask(${task.id})"><i class="fas fa-edit"></i></button>
+                <button class="btn btn-primary btn-sm" ${upButtonDisabled} onclick="moveUp(${task.id})"><i class="fas fa-arrow-up"></i></button>
+                <button class="btn btn-primary btn-sm" ${downButtonDisabled} onclick="moveDown(${task.id})"><i class="fas fa-arrow-down"></i></button>
+                <button class="btn btn-primary btn-sm" onclick="duplicateTask(${task.id})"><i class="fas fa-clone"></i></button>
+                <button class="btn btn-primary btn-sm" onclick="confirmDelete(${task.id})"><i class="fas fa-trash-alt"></i></button>
             </div>
         `;
         taskList.appendChild(taskItem);
