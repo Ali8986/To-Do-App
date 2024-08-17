@@ -129,3 +129,6 @@ ul{
     display: none;
     text-decoration: line-through;
 }
+.fas{
+    color: white !important;
+}
