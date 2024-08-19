@@ -9,7 +9,7 @@ document.getElementById('todo-form').addEventListener('submit', function(e) {
             // Editing existing task
             tasks = tasks.map(task => task.id === editId ? { ...task, content: taskInput.value.trim() } : task);
             editId = null;
-            document.getElementById('submit-button').innerHTML = `<i class="fas fa-plus"></i> Submit`;
+            document.getElementById('submit-button').innerHTML = 'Submit';
         } else {
             // Adding new task
             addTask(taskInput.value.trim());
